@@ -1,0 +1,684 @@
+/* /css/styles.css - Christmas Theme (s českou diakritikou) */
+
+/* Importujeme fonty z Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans:wght@400;700&display=swap');
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f0f0;
+    color: #4B0000;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    overflow: hidden;
+    /*padding: 20px;*/
+    background-color: #fffafa;
+    border-radius: 0;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+
+/* Nové styly pro hlavní hlavičku stránky podle obrázku */
+header.site-header {
+    background: #d32f2f;
+    color: #FFFFFF;
+    padding: 10px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0px;
+    box-shadow: 0 4px 12px 4px rgba(0, 0, 0, 0.8);
+    position: relative;
+    z-index: 10;
+}
+
+header.site-header .logo-container h1 a.logo-link,
+header.site-header .logo-container h1 a.logo-link:link,
+header.site-header .logo-container h1 a.logo-link:visited {
+    color: #FFFFFF; /* Stejná barva jako původní H1 */
+    text-decoration: none; /* Odstranění podtržení */
+    display: inline-block; /* Pro případné budoucí stylování */
+}
+
+header.site-header .logo-container h1 a.logo-link:hover {
+    /* Můžete přidat jemný hover efekt, pokud chcete, např. mírné zesvětlení */
+    /* color: #f0f0f0; */
+    /* text-decoration: underline; Pokud chcete podtržení při hoveru */
+    opacity: 0.9; /* Jemné zesvětlení/ztmavení */
+}
+
+header.site-header .logo-container h1 {
+    margin: 20px;
+    margin-left: 120px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    /* color: #FFFFFF; Barva bude nyní na odkazu */
+    text-shadow: none;
+}
+
+header.site-header nav.main-nav ul {
+    padding: 0;
+    list-style: none;
+    margin: 20px;
+    margin-right: 120px;
+    display: flex;
+    align-items: center;
+    background: none;
+}
+
+header.site-header nav.main-nav ul li {
+    display: inline-block;
+    margin-left: 15px;
+}
+header.site-header nav.main-nav ul li:first-child {
+    margin-left: 0;
+}
+
+header.site-header nav.main-nav ul li a.nav-text-link,
+header.site-header nav.main-nav ul li a.nav-text-link:link,
+header.site-header nav.main-nav ul li a.nav-text-link:visited {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 8px 0px;
+    font-weight: normal;
+    font-size: 0.9em;
+    transition: color 0.3s ease;
+}
+header.site-header nav.main-nav ul li a.nav-text-link:hover,
+header.site-header nav.main-nav ul li a.nav-text-link.active {
+    color: #f0f0f0;
+    background: none;
+}
+
+header.site-header nav.main-nav ul li a.nav-button {
+    background-color: #FFFFFF;
+    color: #212121;
+    padding: 8px 18px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 25px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 3px 8px 2px rgba(0,0,0,0.6);
+    display: inline-block;
+    line-height: 1.4;
+}
+
+header.site-header nav.main-nav ul li a.nav-button:hover {
+    background-color: #f5f5f5;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+}
+
+header.site-header nav.main-nav ul li a.nav-button.active-button {
+    background-color: #e0e0e0;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+/* --- ÚVODNÍ SEKCE --- */
+#uvod {
+    background-image: url('../images/vanocni_pozadi.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+    color: #FFFFFF;
+    margin-bottom: 0px;
+    border-radius: 0;
+}
+
+#uvod .uvod-text-box {
+    background-color: rgba(0, 0, 0, 0.55);
+    display: inline-block;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+#uvod .uvod-text-box h2 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 3em;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}
+
+#uvod .uvod-text-box p {
+    font-size: 1.2em;
+    color: #f0f0f0;
+    margin-bottom: 0;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+/* --- STYLY PRO SEZNAM DÍLEN - VERZE BEZ OBRÁZKŮ --- */
+#seznam-dilen {
+    padding: 40px 20px; /* Přidán padding pro sekci, aby nebyla nalepená */
+    background-color: #f8f0f0; /* Aby ladilo s body, pokud je .container průhledný */
+    position: relative;
+    box-shadow: 0 -4px 12px 4px rgba(0, 0, 0, 0.6);
+}
+
+#seznam-dilen h2 {
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 2.5em;
+    color: #800000;
+    margin-bottom: 40px;
+}
+
+.dilny-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.dilna-karta {
+    background-color: #FFF7F7;
+    border: 1px solid #FADADD;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(139, 0, 0, 0.07);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.dilna-karta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(139, 0, 0, 0.12);
+}
+
+/* ODSTRANĚN STYL .dilna-obrazek-placeholder a .dilna-obrazek-placeholder img */
+
+.dilna-obsah {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.dilna-header { /* Nový styl pro obalení H3 a tagu */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Nebo center, pokud preferujete vertikální centrování */
+    margin-bottom: 8px;
+}
+
+.dilna-obsah h3 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.2em;
+    color: #d32f2f;
+    margin-top: 0;
+    margin-bottom: 0; /* Řešeno přes .dilna-header */
+    font-weight: 700;
+    line-height: 1.3;
+    flex-grow: 1; /* Aby nadpis zabral co nejvíce místa */
+}
+
+.kategorie-tag {
+    /* Už není absolutně pozicovaný */
+    background-color: #28a745;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.7em;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1;
+    white-space: nowrap;
+    margin-left: 10px; /* Mezera od nadpisu */
+    flex-shrink: 0; /* Aby se tag nezmenšoval, pokud je nadpis dlouhý */
+}
+
+.dilna-vedouci {
+    font-size: 0.8em;
+    color: #757575;
+    margin-bottom: 15px;
+}
+
+.dilna-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px 12px;
+    font-size: 0.85em;
+    color: #4B0000;
+    margin-bottom: 15px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    color: #424242;
+}
+
+.info-item .ikona {
+    margin-right: 7px;
+    font-size: 1em;
+    color: #757575;
+}
+
+.dilna-dostupnost {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8em;
+    color: #616161;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+.dilna-dostupnost strong {
+    color: #d32f2f;
+    font-weight: 700;
+}
+
+.progress-bar-kontejner {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    height: 6px;
+    margin-bottom: 18px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #4CAF50;
+    border-radius: 4px;
+    transition: width 0.4s ease-out;
+}
+.dilna-karta .progress-bar[style*="width: 100%"] {
+    background-color: #f44336;
+}
+.dilna-karta .progress-bar[style*="width: 0%"] {
+    background-color: #4CAF50;
+}
+
+.tlacitko-prihlasit {
+    display: block;
+    background: #d32f2f;
+    color: #FFFFFF;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    margin-top: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.tlacitko-prihlasit:hover {
+    background: #b71c1c;
+    transform: scale(1.02);
+}
+
+.tlacitko-prihlasit.obsazeno {
+    background-color: #ef9a9a;
+    color: #fffafa;
+    cursor: not-allowed;
+}
+.tlacitko-prihlasit.obsazeno:hover {
+    background-color: #ef9a9a;
+    transform: none;
+}
+
+/* --- KONEC STYLŮ PRO SEZNAM DÍLEN --- */
+
+
+/* ZAKOMENTOVANÉ PŮVODNÍ STYLY PRO .dilna */
+/*
+.dilna {
+    border: 1px solid #D22B2B;
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: #fff8dc;
+    border-radius: 8px;
+    box-shadow: 3px 3px 8px rgba(139, 0, 0, 0.1);
+}
+
+.dilna h3 {
+    margin-top: 0;
+    color: #800000;
+    font-family: 'Lobster', cursive;
+    font-size: 2.0em;
+    font-weight: normal;
+}
+
+.dilna p {
+    margin: 8px 0;
+    color: #400000;
+}
+
+.dilna strong {
+    color: #004d00;
+}
+
+.dilna a.prihlasit-se {
+    display: inline-block;
+    background: #008000;
+    color: #FFFFFF;
+    padding: 12px 20px;
+    text-decoration: none;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.dilna a.prihlasit-se:hover {
+    background: #006400;
+    transform: translateY(-2px);
+}
+*/
+/* --- KONEC ZAKOMENTOVANÝCH PŮVODNÍCH STYLŮ --- */
+
+
+/* Formuláře */
+form {
+    margin-top: 20px;
+    padding: 25px;
+    border: 1px solid #DC143C;
+    background-color: #fffafa;
+    border-radius: 8px;
+}
+
+/* ... zbytek vašeho CSS ... */
+/* ... (Form label, input, button, zprávy, footer, admin-section, modální okna atd.) ... */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #8B0000;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="number"],
+form input[type="date"],
+form input[type="datetime-local"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #CD5C5C;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #FFFAFA;
+    color: #4B0000;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus,
+form input[type="number"]:focus,
+form input[type="date"]:focus,
+form input[type="datetime-local"]:focus,
+form textarea:focus,
+form select:focus {
+    border-color: #006400;
+    box-shadow: 0 0 5px rgba(0, 100, 0, 0.3);
+    outline: none;
+}
+
+
+form input[type="submit"],
+button {
+    background: #B22222;
+    color: #FFFFFF;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Noto Sans', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover,
+button:hover {
+    background: #800000;
+}
+
+.error, .success, .info, .warning {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+}
+
+.success {
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+}
+
+.info {
+    color: #800000;
+    background-color: #ffe4e1;
+    border: 1px solid #ffcccb;
+}
+
+.warning {
+    color: #856404;
+    background-color: #fff3cd;
+    border: 1px solid #ffeeba;
+}
+
+
+footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+    background: #d32f2f;
+    color: #ffffff;
+    position: relative;
+    box-shadow: 0 -4px 12px 2px rgba(0, 0, 0, 0.6);
+
+
+}
+footer p {
+    margin: 0;
+}
+
+.admin-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-bottom: 2px dashed #B22222;
+    background-color: #fff5f5;
+    border-radius: 5px;
+}
+.admin-section h2,
+.admin-section h3 {
+    color: #800000;
+    font-family: 'Lobster', cursive;
+    font-weight: normal;
+}
+
+.admin-section h3 {
+    font-size: 1.8em;
+}
+.admin-section table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 15px;
+}
+.admin-section th, .admin-section td {
+    border: 1px solid #CD5C5C;
+    padding: 10px;
+    text-align: left;
+}
+.admin-section th {
+    background-color: #DC143C;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+}
+.admin-section td a {
+    color: #006400;
+    text-decoration: none;
+    font-weight: bold;
+}
+.admin-section td a:hover {
+    text-decoration: underline;
+    color: #B22222;
+}
+.admin-section td a.smazat-dilnu-link {
+    color: #C00000;
+}
+.admin-section td a.smazat-dilnu-link:hover {
+    color: #800000;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+    header.site-header {
+        flex-direction: column;
+        padding: 15px;
+    }
+    header.site-header .logo-container h1 {
+        font-size: 2.2em;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    header.site-header nav.main-nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    header.site-header nav.main-nav ul li {
+        margin-left: 0;
+        margin-bottom: 8px;
+        width: 100%;
+        text-align: center;
+    }
+     header.site-header nav.main-nav ul li a.nav-button,
+     header.site-header nav.main-nav ul li a.nav-text-link {
+        display: block;
+        width: auto;
+        margin: 0 auto 8px auto;
+        padding: 10px 15px;
+    }
+    .dilny-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+    }
+    .dilna-obsah {
+        padding: 15px 20px;
+    }
+    .dilna-obsah h3 {
+        font-size: 1.15em;
+    }
+    .dilna-info-grid {
+        font-size: 0.8em;
+        gap: 6px 10px;
+    }
+    .tlacitko-prihlasit {
+        padding: 9px 12px;
+        font-size: 0.85em;
+    }
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(139, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease;
+}
+
+.modal-content {
+    background-color: #fffafa;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    border: 3px solid #006400;
+    min-width: 300px;
+    max-width: 500px;
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+.modal-overlay.active .modal-content {
+    transform: scale(1);
+}
+
+.modal-content p {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.2em;
+    color: #8B0000;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.modal-buttons button {
+    font-family: 'Noto Sans', sans-serif;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#customConfirmOk {
+    background-color: #008000;
+    color: white;
+}
+
+#customConfirmOk:hover {
+    background-color: #006400;
+    transform: translateY(-1px);
+}
+
+#customConfirmCancel {
+    background-color: #DC143C;
+    color: white;
+}
+
+#customConfirmCancel:hover {
+    background-color: #B22222;
+    transform: translateY(-1px);
+}
+
+.christmas-icon {
+    margin-left: 5px;
+}
