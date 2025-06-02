@@ -1,0 +1,181 @@
+/* styl.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: #000 3px solid;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    background: #444;
+    margin-bottom: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    padding: 10px 15px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background: #555;
+}
+
+#uvod {
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+#uvod h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+#uvod p {
+    font-size: 1.5em;
+    color: #333;
+}
+
+#seznam-dilen {
+    padding: 20px;
+}
+
+.dilna {
+    border: 1px solid #000;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f4f4f4;
+}
+
+.dilna h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.dilna p {
+    margin: 5px 0;
+}
+
+.dilna a.prihlasit-se {
+    display: inline-block;
+    background: #555;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    margin-top: 10px;
+    border: 1px solid #000;
+}
+
+.dilna a.prihlasit-se:hover {
+    background: #333;
+}
+
+form {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="number"],
+form input[type="date"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+form input[type="submit"],
+button {
+    background: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+form input[type="submit"]:hover,
+button:hover {
+    background: #555;
+}
+
+.error {
+    color: red;
+    background: #ffe0e0;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid red;
+}
+
+.success {
+    color: green;
+    background: #e0ffe0;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid green;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    background: #333;
+    color: #fff;
+}
+
+/* Pro admin panel */
+.admin-section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #ccc;
+}
+.admin-section h2 {
+    color: #333;
+}
