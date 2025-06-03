@@ -44,14 +44,7 @@ Jednoduchá webová aplikace postavená na PHP, MySQL, HTML, CSS a JavaScriptu p
 1.  **Webový server:** Ujistěte se, že máte nainstalovaný a spuštěný webový server s podporou PHP (např. Apache, Nginx) a databázový server MySQL/MariaDB.
 2.  **Databáze:**
     *   Vytvořte databázi (např. `dilnicky_db`).
-    *   Importujte strukturu tabulek a případná počáteční data. SQL skript pro vytvoření tabulek:
-      ```sql
-      -- Zde vložte SQL kód pro vytvoření tabulek (rodice, deti, dilny, prihlasky, admini)
-      -- CREATE TABLE `rodice` ( ... );
-      -- ... atd.
-      -- Nezapomeňte na ukázkového admina:
-      -- INSERT INTO `admini` (`username`, `password_hash`) VALUES ('admin', '$2y$10$...hash_pro_heslo_admin123...');
-      ```
+    *   Importujte strukturu tabulek a případná počáteční data.
 3.  **Konfigurace:**
     *   Zkopírujte soubory projektu do kořenového adresáře vašeho webového serveru (např. `htdocs/dilnicky` nebo `www/dilnicky`).
     *   Upravte soubor `includes/db_config.php` a nastavte správné přihlašovací údaje k vaší databázi (`DB_SERVER`, `DB_USERNAME`, `DB_PASSWORD`, `DB_NAME`).
