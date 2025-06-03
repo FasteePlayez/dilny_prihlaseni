@@ -39,32 +39,6 @@ Jednoduchá webová aplikace postavená na PHP, MySQL, HTML, CSS a JavaScriptu p
 *   **Fonty:** Google Fonts (Lobster, Noto Sans)
 *   **Design:** Vlastní vánoční téma (červená, zelená, bílá).
 
-## Struktura Projektu
-
-/dilnicky/
-|-- index.php (Hlavní stránka pro uživatele)
-|-- prihlaska/
-| |-- prihlaska.php (Formulář pro přihlášení na dílnu)
-| |-- zpracuj_prihlasku.php (PHP skript pro zpracování přihlášky)
-|-- admin/
-| |-- admin_login.php (Přihlašovací stránka pro admina)
-| |-- admin_panel.php (Panel pro administrátory)
-| |-- zpracuj_admin_login.php (PHP skript pro zpracování admin přihlášení)
-| |-- pridej_dilnu.php (PHP skript pro přidání dílny adminem)
-| |-- smaz_dilnu.php (PHP skript pro smazání dílny adminem)
-| |-- stahni_ucastniky.php (PHP skript pro stažení seznamu účastníků)
-| |-- logout.php (Odhlášení admina)
-|-- includes/
-| |-- db_config.php (Konfigurace připojení k databázi)
-| |-- header.php (Společná hlavička HTML)
-| |-- footer.php (Společná patička HTML)
-|-- css/
-| |-- styles.css (Hlavní CSS styly)
-|-- scripts/
-| |-- script.js (JavaScript pro interaktivitu)
-|-- images/ (Adresář pro obrázky, např. pozadí)
-
-
 ## Instalace a Spuštění
 
 1.  **Webový server:** Ujistěte se, že máte nainstalovaný a spuštěný webový server s podporou PHP (např. Apache, Nginx) a databázový server MySQL/MariaDB.
